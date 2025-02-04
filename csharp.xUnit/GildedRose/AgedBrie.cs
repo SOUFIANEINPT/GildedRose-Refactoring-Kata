@@ -12,7 +12,17 @@ namespace GildedRoseKata
 
         public override void UpdateQuality()
         {
-           
+            if (Item.Quality < 50)
+            {
+                Item.Quality++;
+            }
+
+            Item.SellIn--;
+
+            if (Item.SellIn < 0 && Item.Quality < 50)
+            {
+                Item.Quality++;
+            }
         }
     }
 }
