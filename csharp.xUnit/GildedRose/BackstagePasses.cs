@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GildedRoseKata
 {
-    internal class BackstagePasses : BaseItem
+    public class BackstagePasses : BaseItem
     {
         public BackstagePasses(Item item) : base(item) { }
 
